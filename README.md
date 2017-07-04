@@ -24,4 +24,4 @@ PHP调取其它语言编译生成的可执行程序
     $rs = PipeInterface::getInstance('summary')->get($str);
 ```
 
-** 以上例子中的summary组件是NLPIR中的摘要提取组件，目前只有c/c++/java的动态库 **
+**以上例子中的summary组件是NLPIR中的摘要提取组件，目前只有c/c++/java的动态库**
