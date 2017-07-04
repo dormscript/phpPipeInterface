@@ -8,19 +8,20 @@ PHP调取其它语言编译生成的可执行程序
 
 ## 使用方法
 * 引入类库
-    
-    include "PipeInterface.php";
+```php
+    include "PipeInterface.php";
     using ExecutableProgram\PipeInterface;
-  
+```
+
 * 指定名称及可执行文件的路径
-  
+```php  
     PipeInterface::addPragram('summary', '/data/nlpir/demo/summary');
     PipeInterface::addPragram('key', '/data/nlpir/demo/key');
-  
+```  
 * 与程序交互 
-
+```php
     $str = "可执行程序（executable program，EXE File）是指一种可在操作系统存储空间中浮动定位的可执行程序。在MS-DOS和MS-WINDOWS下，此类文件扩展名为·exe。";
     $rs = PipeInterface::getInstance('summary')->get($str);
-
+```
 
 ** 以上例子中的summary组件是NLPIR中的摘要提取组件，目前只有c/c++/java的动态库 **
