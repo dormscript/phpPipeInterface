@@ -1,7 +1,7 @@
 <?php
 namespace ExecutableProgram;
 
-//通过管道与其它可执行程序通信
+//通过管道与其它可执行程序交互
 class PipeInterface
 {
     private static $instance; //每个C程序是单例模式
