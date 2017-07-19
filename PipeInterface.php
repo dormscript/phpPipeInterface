@@ -26,6 +26,7 @@ class PipeInterface
 
     public function __destruct()
     {
+        $this->get("EXIT");
         fclose($this->pipes['0']);
         fclose($this->pipes['1']);
         proc_close($this->handle);
